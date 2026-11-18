@@ -1,0 +1,29 @@
+{
+  "name": "FOCUS · 我的人生工作台",
+  "short_name": "FOCUS",
+  "description": "每天一点进步，习惯、阅读、目标和财务在一处管理",
+  "start_url": "./",
+  "display": "standalone",
+  "background_color": "#f8f2e9",
+  "theme_color": "#f8f2e9",
+  "icons": [
+    {
+      "src": "./icons/icon-192.png",
+      "sizes": "192x192",
+      "type": "image/png",
+      "purpose": "any maskable"
+    },
+    {
+      "src": "./icons/icon-512.png",
+      "sizes": "512x512",
+      "type": "image/png",
+      "purpose": "any maskable"
+    },
+    {
+      "src": "./icons/icon.svg",
+      "sizes": "any",
+      "type": "image/svg+xml",
+      "purpose": "any"
+    }
+  ]
+}

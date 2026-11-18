@@ -1,0 +1,47 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover" />
+  <meta name="theme-color" content="#f8f2e9" />
+  <meta name="description" content="我的人生工作台：每日习惯、阅读听书、目标与完整个人财务管理。" />
+  <title>FOCUS · 我的人生工作台</title>
+  <link rel="icon" type="image/svg+xml" href="./icons/icon.svg" />
+  <link rel="manifest" href="./manifest.webmanifest" />
+  <link rel="stylesheet" href="./style.css" />
+</head>
+<body>
+<div id="app-shell">
+  <aside class="sidebar" aria-label="主菜单">
+    <div class="brand"><div class="brand-mark">F<span>✦</span></div><div><strong>FOCUS</strong><small>我的人生工作台</small></div></div>
+    <div class="sidebar-label">我的空间</div>
+    <nav class="side-nav">
+      <button class="nav-link active" data-page="today"><span class="nav-ico">⌂</span><span>人生工作台</span><span class="nav-tail">›</span></button>
+      <button class="nav-link" data-page="plan"><span class="nav-ico">◎</span><span>目标与任务</span><span class="nav-tail">›</span></button>
+      <button class="nav-link" data-page="reading"><span class="nav-ico">▤</span><span>阅读与听书</span><span class="nav-tail">›</span></button>
+      <button class="nav-link" data-page="money"><span class="nav-ico">◈</span><span>财务管理</span><span class="nav-tail">›</span></button>
+      <button class="nav-link" data-page="review"><span class="nav-ico">▥</span><span>月度回顾</span><span class="nav-tail">›</span></button>
+    </nav>
+    <div class="sidebar-bottom"><div class="little-note"><span class="note-symbol">✳</span><p>慢一点没关系，<br><strong>每天都在向前。</strong></p></div><button class="nav-link" data-page="settings"><span class="nav-ico">⚙</span><span>设置与同步</span></button></div>
+  </aside>
+  <div class="workspace">
+    <header class="topbar">
+      <div class="topbar-left"><span class="top-date-icon">▣</span><strong id="header-date"></strong><span class="crumb-divider">·</span><span id="header-title">人生工作台</span></div>
+      <div class="topbar-right"><span id="sync-status" class="status-pill" title="数据保存状态">● 本机保存</span><button class="avatar" id="account-shortcut" aria-label="账号与设置">我</button></div>
+    </header>
+    <main id="main-content" tabindex="-1"></main>
+    <footer class="site-footer">FOCUS · 让目标有方向，让每天有进度 <span id="footer-date"></span></footer>
+  </div>
+</div>
+<nav class="bottom-nav" aria-label="手机菜单">
+  <button data-page="today" class="active"><span>⌂</span>首页</button>
+  <button data-page="plan"><span>◎</span>目标</button>
+  <button data-page="reading"><span>▤</span>阅读</button>
+  <button data-page="money"><span>◈</span>财务</button>
+  <button data-page="settings"><span>⚙</span>设置</button>
+</nav>
+<div id="toast" class="toast" role="status" aria-live="polite"></div>
+<script src="./config.js"></script>
+<script src="./app.js" defer></script>
+</body>
+</html>
